@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844"><defs><linearGradient id="cam1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9B8A8"/><stop offset="1" stop-color="#8C7B6E"/></linearGradient>
+<linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E4DC"/><stop offset="0.62" stop-color="#DCD3C6"/><stop offset="0.62" stop-color="#B89C7E"/><stop offset="1" stop-color="#9C8064"/></linearGradient>
+<linearGradient id="store" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3B2A6B"/><stop offset="1" stop-color="#1B1240"/></linearGradient>
+<linearGradient id="aisle" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E5E7EB"/><stop offset="1" stop-color="#9CA3AF"/></linearGradient>
+<linearGradient id="hero" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1E3A8A"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs><g id="03_View_In_Space"><rect x="0" y="0" width="390" height="844" rx="0" fill="url(#room)" fill-opacity="1"/>
+<rect x="40" y="150" width="90" height="120" fill="#FFFFFF" fill-opacity="0.6"/><rect x="270" y="170" width="70" height="90" fill="#A7C4A0" fill-opacity="0.7"/>
+<line x1="-200" y1="760" x2="150" y2="523" stroke="#F59E0B" stroke-opacity="0.35" stroke-width="1.5"/>
+<line x1="-70" y1="760" x2="165" y2="523" stroke="#F59E0B" stroke-opacity="0.35" stroke-width="1.5"/>
+<line x1="60" y1="760" x2="180" y2="523" stroke="#F59E0B" stroke-opacity="0.35" stroke-width="1.5"/>
+<line x1="190" y1="760" x2="195" y2="523" stroke="#F59E0B" stroke-opacity="0.35" stroke-width="1.5"/>
+<line x1="320" y1="760" x2="210" y2="523" stroke="#F59E0B" stroke-opacity="0.35" stroke-width="1.5"/>
+<line x1="450" y1="760" x2="225" y2="523" stroke="#F59E0B" stroke-opacity="0.35" stroke-width="1.5"/>
+<line x1="580" y1="760" x2="240" y2="523" stroke="#F59E0B" stroke-opacity="0.35" stroke-width="1.5"/>
+<g id="AR_Sofa"><rect x="70" y="420" width="250" height="70" rx="14" fill="#2F5D50"/><rect x="60" y="460" width="270" height="60" rx="16" fill="#3E7A68"/><rect x="50" y="440" width="40" height="80" rx="12" fill="#2F5D50"/><rect x="300" y="440" width="40" height="80" rx="12" fill="#2F5D50"/><rect x="70" y="520" width="10" height="16" fill="#1F2937"/><rect x="310" y="520" width="10" height="16" fill="#1F2937"/></g>
+<line x1="50" y1="400" x2="340" y2="400" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="160" y="386" width="62.279999999999994" height="28" rx="14" fill="#FFFFFF" fill-opacity="1"/>
+<text x="191.14" y="405" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#111827" text-anchor="middle">210 cm</text>
+<text x="24" y="32" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#111827" text-anchor="start">9:41</text>
+<text x="366" y="32" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="end">5G  100%</text>
+<circle cx="36" cy="74" r="18" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="36" y="80" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#111827" text-anchor="middle">‹</text>
+<text x="195.0" y="72" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#111827" text-anchor="middle">Sofa Kayu 3-Seater</text>
+<text x="195.0" y="90" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#6B7280" text-anchor="middle">210 x 90 x 85 cm</text>
+<rect x="80" y="112" width="247.29999999999998" height="28" rx="14" fill="#000" fill-opacity="1"/>
+<text x="203.64999999999998" y="131" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#FFFFFF" text-anchor="middle">Move phone slowly to scan the floor</text>
+<rect x="0" y="544" width="390" height="300" rx="24" fill="#FFFFFF" fill-opacity="1"/>
+<rect x="175.0" y="556" width="40" height="4" rx="2" fill="#D1D5DB" fill-opacity="1"/>
+<rect x="20" y="578" width="51.839999999999996" height="28" rx="14" fill="#EEF2FF" fill-opacity="1"/>
+<text x="45.92" y="597" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">Move</text>
+<rect x="79.84" y="578" width="65.75999999999999" height="28" rx="14" fill="#EEF2FF" fill-opacity="1"/>
+<text x="112.72" y="597" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">Rotate</text>
+<rect x="153.6" y="578" width="72.72" height="28" rx="14" fill="#1E3A8A" fill-opacity="1"/>
+<text x="189.95999999999998" y="597" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle">Measure</text>
+<rect x="234.32" y="578" width="58.8" height="28" rx="14" fill="#EEF2FF" fill-opacity="1"/>
+<text x="263.71999999999997" y="597" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">Fits?</text>
+<text x="20" y="634" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#6B7280" text-anchor="start">Fabric</text>
+<circle cx="38" cy="664" r="16" fill="#3E7A68" fill-opacity="1" stroke="#1E3A8A" stroke-width="3"/>
+<circle cx="84" cy="664" r="16" fill="#8B5E3C" fill-opacity="1"/>
+<circle cx="130" cy="664" r="16" fill="#6B7280" fill-opacity="1"/>
+<circle cx="176" cy="664" r="16" fill="#1E3A8A" fill-opacity="1"/>
+<rect x="20" y="696" width="350" height="44" rx="12" fill="#ECFDF5" fill-opacity="1"/>
+<text x="36" y="724" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#047857" text-anchor="start">Fits your space (12 cm clearance)</text>
+<rect x="20" y="752" width="110" height="52" rx="14" fill="#FFFFFF" fill-opacity="1"/>
+<text x="75.0" y="782.9" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#111827" text-anchor="middle">Save</text>
+<rect x="20" y="752" width="110" height="52" rx="14" fill="none" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<rect x="140" y="752" width="230" height="52" rx="14" fill="#1E3A8A" fill-opacity="1"/>
+<text x="255.0" y="783.6" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">Add to Cart • RM 1,499</text></g></svg>

@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844"><defs><linearGradient id="cam1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9B8A8"/><stop offset="1" stop-color="#8C7B6E"/></linearGradient>
+<linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E4DC"/><stop offset="0.62" stop-color="#DCD3C6"/><stop offset="0.62" stop-color="#B89C7E"/><stop offset="1" stop-color="#9C8064"/></linearGradient>
+<linearGradient id="store" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3B2A6B"/><stop offset="1" stop-color="#1B1240"/></linearGradient>
+<linearGradient id="aisle" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E5E7EB"/><stop offset="1" stop-color="#9CA3AF"/></linearGradient>
+<linearGradient id="hero" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1E3A8A"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs><g id="02_AR_TryOn"><rect x="0" y="0" width="390" height="844" rx="0" fill="url(#cam1)" fill-opacity="1"/>
+<ellipse cx="195" cy="300" rx="92" ry="118" fill="#E8C4A6"/><path d="M95 250 Q195 120 295 250 L300 430 Q195 470 90 430 Z" fill="#3B4A7A" fill-opacity="0.95"/><ellipse cx="195" cy="312" rx="74" ry="96" fill="#E8C4A6"/>
+<g id="AR_Glasses"><rect x="127" y="285" width="58" height="40" rx="14" fill="none" stroke="#111827" stroke-width="5"/><rect x="205" y="285" width="58" height="40" rx="14" fill="none" stroke="#111827" stroke-width="5"/><line x1="185" y1="300" x2="205" y2="300" stroke="#111827" stroke-width="5"/></g>
+<path d="M165 365 Q195 382 225 365" stroke="#B4505A" stroke-width="6" fill="none" stroke-linecap="round"/>
+<circle cx="130" cy="250" r="3" fill="#F59E0B" fill-opacity="1"/>
+<circle cx="260" cy="250" r="3" fill="#F59E0B" fill-opacity="1"/>
+<circle cx="195" cy="410" r="3" fill="#F59E0B" fill-opacity="1"/>
+<circle cx="110" cy="330" r="3" fill="#F59E0B" fill-opacity="1"/>
+<circle cx="280" cy="330" r="3" fill="#F59E0B" fill-opacity="1"/>
+<text x="24" y="32" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF" text-anchor="start">9:41</text>
+<text x="366" y="32" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="end">5G  100%</text>
+<circle cx="36" cy="74" r="18" fill="#000" fill-opacity="0.35"/>
+<text x="36" y="80" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#FFFFFF" text-anchor="middle">‹</text>
+<text x="195.0" y="72" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">Rayban Classic</text>
+<text x="195.0" y="90" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#E5E7EB" text-anchor="middle">RM 489.00</text>
+<rect x="98" y="112" width="202.64" height="28" rx="14" fill="#000" fill-opacity="1"/>
+<text x="199.32" y="131" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#FFFFFF" text-anchor="middle">Tip: move to a brighter area</text>
+<rect x="0" y="514" width="390" height="330" rx="24" fill="#FFFFFF" fill-opacity="1"/>
+<rect x="175.0" y="526" width="40" height="4" rx="2" fill="#D1D5DB" fill-opacity="1"/>
+<text x="20" y="562" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#6B7280" text-anchor="start">Colour</text>
+<circle cx="38" cy="592" r="16" fill="#111827" fill-opacity="1" stroke="#1E3A8A" stroke-width="3"/>
+<circle cx="84" cy="592" r="16" fill="#7C2D12" fill-opacity="1"/>
+<circle cx="130" cy="592" r="16" fill="#1E3A8A" fill-opacity="1"/>
+<circle cx="176" cy="592" r="16" fill="#9CA3AF" fill-opacity="1"/>
+<circle cx="222" cy="592" r="16" fill="#B45309" fill-opacity="1"/>
+<rect x="20" y="624" width="350" height="58" rx="14" fill="#EEF2FF" fill-opacity="1"/>
+<text x="36" y="648" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#1E3A8A" text-anchor="start">AI Size &amp; Fit</text>
+<text x="36" y="668" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#111827" text-anchor="start">Recommended: Medium (52 mm)</text>
+<rect x="282" y="639" width="81.41999999999999" height="28" rx="14" fill="#1E3A8A" fill-opacity="1"/>
+<text x="322.71" y="658" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#FFFFFF" text-anchor="middle">87% match</text>
+<rect x="20" y="696" width="110" height="40" rx="12" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="75" y="721" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Compare</text>
+<rect x="140" y="696" width="110" height="40" rx="12" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="195" y="721" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Snapshot</text>
+<rect x="260" y="696" width="110" height="40" rx="12" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="315" y="721" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Co-Shop</text>
+<rect x="20" y="748" width="350" height="52" rx="14" fill="#1E3A8A" fill-opacity="1"/>
+<text x="195.0" y="779.6" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">Add to Cart  •  RM 489.00</text>
+<text x="195.0" y="820" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#6B7280" text-anchor="middle">Camera processed on your phone only</text></g></svg>

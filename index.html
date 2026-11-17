@@ -1,0 +1,375 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ShopVerse XR – Alpha Prototype</title>
+<style>
+*{box-sizing:border-box;margin:0}body{font-family:Inter,Arial,sans-serif;background:#E5E7EB;color:#111827;display:flex;gap:32px;justify-content:center;align-items:flex-start;padding:28px 16px;min-height:100vh;flex-wrap:wrap}
+.side{max-width:300px}.side h2{font-size:22px;margin-bottom:6px}.side p{font-size:13px;color:#4B5563;line-height:1.5;margin-bottom:14px}
+.side button{display:block;width:100%;text-align:left;margin:6px 0;padding:10px 12px;border-radius:10px;border:1px solid #D1D5DB;background:#fff;font:600 13px Inter,Arial;cursor:pointer}
+.side button.on{background:#1E3A8A;color:#fff;border-color:#1E3A8A}
+.phone{width:414px;height:868px;border-radius:52px;background:#111827;padding:12px;box-shadow:0 30px 60px rgba(0,0,0,.25);flex:none}
+.vp{position:relative;width:390px;height:844px;border-radius:40px;overflow:hidden;background:#fff}
+.scr{position:absolute;inset:0;opacity:0;pointer-events:none;transform:translateX(30px);transition:opacity .3s ease,transform .3s ease}
+.scr.on{opacity:1;pointer-events:auto;transform:none}.scr>svg{display:block}
+.hs{position:absolute;border-radius:14px;cursor:pointer}.flash .hs{background:rgba(245,158,11,.28);outline:2px solid #F59E0B}
+.hs:active{background:rgba(30,58,138,.15)}
+.conf{padding:0 24px;text-align:center;height:100%;background:#fff}.sb{display:flex;justify-content:space-between;font:600 14px Inter,Arial;padding:18px 4px 0}
+.tick{width:110px;height:110px;border-radius:50%;background:#10B981;margin:90px auto 24px;display:grid;place-items:center;box-shadow:0 0 0 14px #ECFDF5}
+h1{font-size:24px}.m{color:#6B7280;font-size:13px;margin-top:6px}.card{text-align:left;border:1px solid #E5E7EB;border-radius:16px;padding:16px;margin:28px 0;font-size:14px}
+.row{display:flex;justify-content:space-between;padding:6px 0}.tot{border-top:1px solid #E5E7EB;margin-top:6px;padding-top:12px}
+.pri,.sec{width:100%;height:52px;border-radius:14px;font:600 15px Inter,Arial;cursor:pointer;margin-top:10px}.pri{background:#1E3A8A;color:#fff;border:0}.sec{background:#fff;border:1px solid #E5E7EB}
+@media (max-width:480px){.phone{transform:scale(.88);transform-origin:top center}}
+</style></head><body>
+<div class="side"><h2>ShopVerse XR</h2><p>High-fidelity alpha prototype for ITS63504 HCI. It covers the five XR solutions for Malaysian retail. Tap the buttons inside the phone to navigate. Tapping an empty area highlights the clickable spots.</p>
+<div id="nav"></div></div>
+<div class="phone"><div class="vp" id="vp"><section class="scr on" id="s0"><svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844"><defs><linearGradient id="cam10" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9B8A8"/><stop offset="1" stop-color="#8C7B6E"/></linearGradient>
+<linearGradient id="room0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E4DC"/><stop offset="0.62" stop-color="#DCD3C6"/><stop offset="0.62" stop-color="#B89C7E"/><stop offset="1" stop-color="#9C8064"/></linearGradient>
+<linearGradient id="store0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3B2A6B"/><stop offset="1" stop-color="#1B1240"/></linearGradient>
+<linearGradient id="aisle0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E5E7EB"/><stop offset="1" stop-color="#9CA3AF"/></linearGradient>
+<linearGradient id="hero0" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1E3A8A"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs><g id="01_Home"><rect x="0" y="0" width="390" height="844" rx="0" fill="#F6F7FB" fill-opacity="1"/>
+<text x="24" y="32" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#111827" text-anchor="start">9:41</text>
+<text x="366" y="32" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="end">5G  100%</text>
+<text x="20" y="78" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500" fill="#6B7280" text-anchor="start">Selamat datang, Edward</text>
+<text x="20" y="104" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="800" fill="#111827" text-anchor="start">ShopVerse XR</text>
+<circle cx="352" cy="90" r="20" fill="#E0E7FF" fill-opacity="1"/>
+<text x="352" y="96" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#1E3A8A" text-anchor="middle">E</text>
+<rect x="20" y="124" width="350" height="46" rx="14" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="46" y="153" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="400" fill="#6B7280" text-anchor="start">Search products, brands, stores</text>
+<circle cx="346" cy="147" r="10" fill="#EEF2FF" fill-opacity="1"/>
+<rect x="20" y="182" width="37.92" height="28" rx="14" fill="#EEF2FF" fill-opacity="1"/>
+<text x="38.96" y="201" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">BM</text>
+<rect x="65.92" y="182" width="37.92" height="28" rx="14" fill="#1E3A8A" fill-opacity="1"/>
+<text x="84.88" y="201" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle">EN</text>
+<rect x="111.84" y="182" width="37.92" height="28" rx="14" fill="#EEF2FF" fill-opacity="1"/>
+<text x="130.8" y="201" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">中文</text>
+<rect x="157.76" y="182" width="58.8" height="28" rx="14" fill="#EEF2FF" fill-opacity="1"/>
+<text x="187.16" y="201" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">Tamil</text>
+<rect x="20" y="222" width="350" height="140" rx="20" fill="url(#hero0)" fill-opacity="1"/>
+<text x="40" y="262" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#FDE68A" text-anchor="start">11.11 MEGA SALE</text>
+<text x="40" y="292" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF" text-anchor="start">Try it on before</text>
+<text x="40" y="318" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#FFFFFF" text-anchor="start">you buy it.</text>
+<rect x="40" y="330" width="120" height="26" rx="13" fill="#F59E0B" fill-opacity="1"/>
+<text x="100.0" y="347.2" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="middle">Explore deals</text>
+<circle cx="320" cy="292" r="46" fill="#FFFFFF" fill-opacity="0.12"/>
+<circle cx="320" cy="292" r="28" fill="#FFFFFF" fill-opacity="0.18"/>
+<text x="20" y="394" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="700" fill="#111827" text-anchor="start">XR Features</text>
+<text x="370" y="394" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#1E3A8A" text-anchor="end">See all</text>
+<rect x="20" y="408" width="171" height="86" rx="16" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<rect x="34" y="422" width="30" height="30" rx="9" fill="#F59E0B" fill-opacity="0.9"/>
+<text x="49" y="443" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">XR</text>
+<text x="34" y="470" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#111827" text-anchor="start">AR Try-On</text>
+<text x="34" y="486" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280" text-anchor="start">Glasses, tudung, makeup</text>
+<rect x="199" y="408" width="171" height="86" rx="16" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<rect x="213" y="422" width="30" height="30" rx="9" fill="#F59E0B" fill-opacity="0.9"/>
+<text x="228" y="443" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">XR</text>
+<text x="213" y="470" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#111827" text-anchor="start">View in My Space</text>
+<text x="213" y="486" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280" text-anchor="start">Furniture at true size</text>
+<rect x="20" y="504" width="171" height="86" rx="16" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<rect x="34" y="518" width="30" height="30" rx="9" fill="#F59E0B" fill-opacity="0.9"/>
+<text x="49" y="539" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">XR</text>
+<text x="34" y="566" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#111827" text-anchor="start">Virtual Store</text>
+<text x="34" y="582" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280" text-anchor="start">360° shops + live</text>
+<rect x="199" y="504" width="171" height="86" rx="16" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<rect x="213" y="518" width="30" height="30" rx="9" fill="#F59E0B" fill-opacity="0.9"/>
+<text x="228" y="539" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">XR</text>
+<text x="213" y="566" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#111827" text-anchor="start">Scan &amp; Navigate</text>
+<text x="213" y="582" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="400" fill="#6B7280" text-anchor="start">In-store AR guide</text>
+<rect x="20" y="604" width="350" height="64" rx="16" fill="#1E3A8A" fill-opacity="1"/>
+<text x="40" y="632" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#FFFFFF" text-anchor="start">Co-Shop with family</text>
+<text x="40" y="652" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" fill="#C7D2FE" text-anchor="start">Shop together in a shared AR room</text>
+<rect x="272" y="620" width="82" height="32" rx="10" fill="#F59E0B" fill-opacity="1"/>
+<text x="313.0" y="640.55" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Start</text>
+<text x="20" y="698" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827" text-anchor="start">Recommended for you</text>
+<rect x="20" y="712" width="110" height="40" rx="10" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<rect x="26" y="718" width="23.6" height="28" rx="14" fill="#F59E0B" fill-opacity="1"/>
+<text x="37.8" y="737" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#FFFFFF" text-anchor="middle">3D</text>
+<rect x="140" y="712" width="110" height="40" rx="10" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<rect x="146" y="718" width="23.6" height="28" rx="14" fill="#F59E0B" fill-opacity="1"/>
+<text x="157.8" y="737" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#FFFFFF" text-anchor="middle">3D</text>
+<rect x="260" y="712" width="110" height="40" rx="10" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<rect x="266" y="718" width="23.6" height="28" rx="14" fill="#F59E0B" fill-opacity="1"/>
+<text x="277.8" y="737" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#FFFFFF" text-anchor="middle">3D</text>
+<rect x="0" y="760" width="390" height="84" rx="0" fill="#FFFFFF" fill-opacity="1"/>
+<rect x="0" y="760" width="390" height="1" rx="0" fill="#E5E7EB" fill-opacity="1"/>
+<rect x="28" y="774" width="22" height="22" rx="6" fill="#1E3A8A" fill-opacity="0.9"/>
+<text x="39" y="824" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="600" fill="#1E3A8A" text-anchor="middle">Home</text>
+<rect x="106" y="774" width="22" height="22" rx="6" fill="#6B7280" fill-opacity="0.35"/>
+<text x="117" y="824" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#6B7280" text-anchor="middle">Explore</text>
+<circle cx="195" cy="788" r="24" fill="#F59E0B" fill-opacity="1"/>
+<text x="195" y="793" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">AR</text>
+<text x="195" y="824" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#6B7280" text-anchor="middle">Scan</text>
+<rect x="262" y="774" width="22" height="22" rx="6" fill="#6B7280" fill-opacity="0.35"/>
+<text x="273" y="824" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#6B7280" text-anchor="middle">Cart</text>
+<rect x="340" y="774" width="22" height="22" rx="6" fill="#6B7280" fill-opacity="0.35"/>
+<text x="351" y="824" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#6B7280" text-anchor="middle">Profile</text>
+<rect x="128.0" y="836" width="134" height="5" rx="3" fill="#111827" fill-opacity="1"/></g></svg><a class="hs" style="left:20px;top:408px;width:171px;height:86px" data-go="1" aria-label="Go to AR Try-On"></a><a class="hs" style="left:199px;top:408px;width:171px;height:86px" data-go="2" aria-label="Go to View in My Space"></a><a class="hs" style="left:20px;top:504px;width:171px;height:86px" data-go="3" aria-label="Go to Virtual Store & Live"></a><a class="hs" style="left:199px;top:504px;width:171px;height:86px" data-go="4" aria-label="Go to Scan & Navigate"></a><a class="hs" style="left:20px;top:604px;width:350px;height:64px" data-go="5" aria-label="Go to Co-Shop & Checkout"></a><a class="hs" style="left:140px;top:760px;width:110px;height:84px" data-go="4" aria-label="Go to Scan & Navigate"></a></section><section class="scr" id="s1"><svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844"><defs><linearGradient id="cam11" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9B8A8"/><stop offset="1" stop-color="#8C7B6E"/></linearGradient>
+<linearGradient id="room1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E4DC"/><stop offset="0.62" stop-color="#DCD3C6"/><stop offset="0.62" stop-color="#B89C7E"/><stop offset="1" stop-color="#9C8064"/></linearGradient>
+<linearGradient id="store1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3B2A6B"/><stop offset="1" stop-color="#1B1240"/></linearGradient>
+<linearGradient id="aisle1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E5E7EB"/><stop offset="1" stop-color="#9CA3AF"/></linearGradient>
+<linearGradient id="hero1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1E3A8A"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs><g id="02_AR_TryOn"><rect x="0" y="0" width="390" height="844" rx="0" fill="url(#cam11)" fill-opacity="1"/>
+<ellipse cx="195" cy="300" rx="92" ry="118" fill="#E8C4A6"/><path d="M95 250 Q195 120 295 250 L300 430 Q195 470 90 430 Z" fill="#3B4A7A" fill-opacity="0.95"/><ellipse cx="195" cy="312" rx="74" ry="96" fill="#E8C4A6"/>
+<g id="AR_Glasses"><rect x="127" y="285" width="58" height="40" rx="14" fill="none" stroke="#111827" stroke-width="5"/><rect x="205" y="285" width="58" height="40" rx="14" fill="none" stroke="#111827" stroke-width="5"/><line x1="185" y1="300" x2="205" y2="300" stroke="#111827" stroke-width="5"/></g>
+<path d="M165 365 Q195 382 225 365" stroke="#B4505A" stroke-width="6" fill="none" stroke-linecap="round"/>
+<circle cx="130" cy="250" r="3" fill="#F59E0B" fill-opacity="1"/>
+<circle cx="260" cy="250" r="3" fill="#F59E0B" fill-opacity="1"/>
+<circle cx="195" cy="410" r="3" fill="#F59E0B" fill-opacity="1"/>
+<circle cx="110" cy="330" r="3" fill="#F59E0B" fill-opacity="1"/>
+<circle cx="280" cy="330" r="3" fill="#F59E0B" fill-opacity="1"/>
+<text x="24" y="32" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF" text-anchor="start">9:41</text>
+<text x="366" y="32" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="end">5G  100%</text>
+<circle cx="36" cy="74" r="18" fill="#000" fill-opacity="0.35"/>
+<text x="36" y="80" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#FFFFFF" text-anchor="middle">‹</text>
+<text x="195.0" y="72" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">Rayban Classic</text>
+<text x="195.0" y="90" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#E5E7EB" text-anchor="middle">RM 489.00</text>
+<rect x="98" y="112" width="202.64" height="28" rx="14" fill="#000" fill-opacity="1"/>
+<text x="199.32" y="131" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#FFFFFF" text-anchor="middle">Tip: move to a brighter area</text>
+<rect x="0" y="514" width="390" height="330" rx="24" fill="#FFFFFF" fill-opacity="1"/>
+<rect x="175.0" y="526" width="40" height="4" rx="2" fill="#D1D5DB" fill-opacity="1"/>
+<text x="20" y="562" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#6B7280" text-anchor="start">Colour</text>
+<circle cx="38" cy="592" r="16" fill="#111827" fill-opacity="1" stroke="#1E3A8A" stroke-width="3"/>
+<circle cx="84" cy="592" r="16" fill="#7C2D12" fill-opacity="1"/>
+<circle cx="130" cy="592" r="16" fill="#1E3A8A" fill-opacity="1"/>
+<circle cx="176" cy="592" r="16" fill="#9CA3AF" fill-opacity="1"/>
+<circle cx="222" cy="592" r="16" fill="#B45309" fill-opacity="1"/>
+<rect x="20" y="624" width="350" height="58" rx="14" fill="#EEF2FF" fill-opacity="1"/>
+<text x="36" y="648" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#1E3A8A" text-anchor="start">AI Size &amp; Fit</text>
+<text x="36" y="668" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#111827" text-anchor="start">Recommended: Medium (52 mm)</text>
+<rect x="282" y="639" width="81.41999999999999" height="28" rx="14" fill="#1E3A8A" fill-opacity="1"/>
+<text x="322.71" y="658" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#FFFFFF" text-anchor="middle">87% match</text>
+<rect x="20" y="696" width="110" height="40" rx="12" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="75" y="721" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Compare</text>
+<rect x="140" y="696" width="110" height="40" rx="12" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="195" y="721" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Snapshot</text>
+<rect x="260" y="696" width="110" height="40" rx="12" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="315" y="721" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Co-Shop</text>
+<rect x="20" y="748" width="350" height="52" rx="14" fill="#1E3A8A" fill-opacity="1"/>
+<text x="195.0" y="779.6" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">Add to Cart  •  RM 489.00</text>
+<text x="195.0" y="820" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#6B7280" text-anchor="middle">Camera processed on your phone only</text></g></svg><a class="hs" style="left:14px;top:52px;width:44px;height:44px" data-go="0" aria-label="Go to Home"></a><a class="hs" style="left:260px;top:696px;width:110px;height:40px" data-go="5" aria-label="Go to Co-Shop & Checkout"></a><a class="hs" style="left:20px;top:748px;width:350px;height:52px" data-go="5" aria-label="Go to Co-Shop & Checkout"></a></section><section class="scr" id="s2"><svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844"><defs><linearGradient id="cam12" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9B8A8"/><stop offset="1" stop-color="#8C7B6E"/></linearGradient>
+<linearGradient id="room2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E4DC"/><stop offset="0.62" stop-color="#DCD3C6"/><stop offset="0.62" stop-color="#B89C7E"/><stop offset="1" stop-color="#9C8064"/></linearGradient>
+<linearGradient id="store2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3B2A6B"/><stop offset="1" stop-color="#1B1240"/></linearGradient>
+<linearGradient id="aisle2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E5E7EB"/><stop offset="1" stop-color="#9CA3AF"/></linearGradient>
+<linearGradient id="hero2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1E3A8A"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs><g id="03_View_In_Space"><rect x="0" y="0" width="390" height="844" rx="0" fill="url(#room2)" fill-opacity="1"/>
+<rect x="40" y="150" width="90" height="120" fill="#FFFFFF" fill-opacity="0.6"/><rect x="270" y="170" width="70" height="90" fill="#A7C4A0" fill-opacity="0.7"/>
+<line x1="-200" y1="760" x2="150" y2="523" stroke="#F59E0B" stroke-opacity="0.35" stroke-width="1.5"/>
+<line x1="-70" y1="760" x2="165" y2="523" stroke="#F59E0B" stroke-opacity="0.35" stroke-width="1.5"/>
+<line x1="60" y1="760" x2="180" y2="523" stroke="#F59E0B" stroke-opacity="0.35" stroke-width="1.5"/>
+<line x1="190" y1="760" x2="195" y2="523" stroke="#F59E0B" stroke-opacity="0.35" stroke-width="1.5"/>
+<line x1="320" y1="760" x2="210" y2="523" stroke="#F59E0B" stroke-opacity="0.35" stroke-width="1.5"/>
+<line x1="450" y1="760" x2="225" y2="523" stroke="#F59E0B" stroke-opacity="0.35" stroke-width="1.5"/>
+<line x1="580" y1="760" x2="240" y2="523" stroke="#F59E0B" stroke-opacity="0.35" stroke-width="1.5"/>
+<g id="AR_Sofa"><rect x="70" y="420" width="250" height="70" rx="14" fill="#2F5D50"/><rect x="60" y="460" width="270" height="60" rx="16" fill="#3E7A68"/><rect x="50" y="440" width="40" height="80" rx="12" fill="#2F5D50"/><rect x="300" y="440" width="40" height="80" rx="12" fill="#2F5D50"/><rect x="70" y="520" width="10" height="16" fill="#1F2937"/><rect x="310" y="520" width="10" height="16" fill="#1F2937"/></g>
+<line x1="50" y1="400" x2="340" y2="400" stroke="#FFFFFF" stroke-width="2" stroke-dasharray="6 4"/>
+<rect x="160" y="386" width="62.279999999999994" height="28" rx="14" fill="#FFFFFF" fill-opacity="1"/>
+<text x="191.14" y="405" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#111827" text-anchor="middle">210 cm</text>
+<text x="24" y="32" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#111827" text-anchor="start">9:41</text>
+<text x="366" y="32" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="end">5G  100%</text>
+<circle cx="36" cy="74" r="18" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="36" y="80" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#111827" text-anchor="middle">‹</text>
+<text x="195.0" y="72" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#111827" text-anchor="middle">Sofa Kayu 3-Seater</text>
+<text x="195.0" y="90" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#6B7280" text-anchor="middle">210 x 90 x 85 cm</text>
+<rect x="80" y="112" width="247.29999999999998" height="28" rx="14" fill="#000" fill-opacity="1"/>
+<text x="203.64999999999998" y="131" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#FFFFFF" text-anchor="middle">Move phone slowly to scan the floor</text>
+<rect x="0" y="544" width="390" height="300" rx="24" fill="#FFFFFF" fill-opacity="1"/>
+<rect x="175.0" y="556" width="40" height="4" rx="2" fill="#D1D5DB" fill-opacity="1"/>
+<rect x="20" y="578" width="51.839999999999996" height="28" rx="14" fill="#EEF2FF" fill-opacity="1"/>
+<text x="45.92" y="597" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">Move</text>
+<rect x="79.84" y="578" width="65.75999999999999" height="28" rx="14" fill="#EEF2FF" fill-opacity="1"/>
+<text x="112.72" y="597" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">Rotate</text>
+<rect x="153.6" y="578" width="72.72" height="28" rx="14" fill="#1E3A8A" fill-opacity="1"/>
+<text x="189.95999999999998" y="597" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle">Measure</text>
+<rect x="234.32" y="578" width="58.8" height="28" rx="14" fill="#EEF2FF" fill-opacity="1"/>
+<text x="263.71999999999997" y="597" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">Fits?</text>
+<text x="20" y="634" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#6B7280" text-anchor="start">Fabric</text>
+<circle cx="38" cy="664" r="16" fill="#3E7A68" fill-opacity="1" stroke="#1E3A8A" stroke-width="3"/>
+<circle cx="84" cy="664" r="16" fill="#8B5E3C" fill-opacity="1"/>
+<circle cx="130" cy="664" r="16" fill="#6B7280" fill-opacity="1"/>
+<circle cx="176" cy="664" r="16" fill="#1E3A8A" fill-opacity="1"/>
+<rect x="20" y="696" width="350" height="44" rx="12" fill="#ECFDF5" fill-opacity="1"/>
+<text x="36" y="724" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#047857" text-anchor="start">Fits your space (12 cm clearance)</text>
+<rect x="20" y="752" width="110" height="52" rx="14" fill="#FFFFFF" fill-opacity="1"/>
+<text x="75.0" y="782.9" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#111827" text-anchor="middle">Save</text>
+<rect x="20" y="752" width="110" height="52" rx="14" fill="none" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<rect x="140" y="752" width="230" height="52" rx="14" fill="#1E3A8A" fill-opacity="1"/>
+<text x="255.0" y="783.6" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">Add to Cart • RM 1,499</text></g></svg><a class="hs" style="left:14px;top:52px;width:44px;height:44px" data-go="0" aria-label="Go to Home"></a><a class="hs" style="left:20px;top:752px;width:110px;height:52px" data-go="5" aria-label="Go to Co-Shop & Checkout"></a><a class="hs" style="left:140px;top:752px;width:230px;height:52px" data-go="5" aria-label="Go to Co-Shop & Checkout"></a></section><section class="scr" id="s3"><svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844"><defs><linearGradient id="cam13" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9B8A8"/><stop offset="1" stop-color="#8C7B6E"/></linearGradient>
+<linearGradient id="room3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E4DC"/><stop offset="0.62" stop-color="#DCD3C6"/><stop offset="0.62" stop-color="#B89C7E"/><stop offset="1" stop-color="#9C8064"/></linearGradient>
+<linearGradient id="store3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3B2A6B"/><stop offset="1" stop-color="#1B1240"/></linearGradient>
+<linearGradient id="aisle3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E5E7EB"/><stop offset="1" stop-color="#9CA3AF"/></linearGradient>
+<linearGradient id="hero3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1E3A8A"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs><g id="04_Virtual_Store"><rect x="0" y="0" width="390" height="844" rx="0" fill="url(#store3)" fill-opacity="1"/>
+<rect x="20" y="190" width="80" height="240" rx="8" fill="#5B4A9B" fill-opacity="0.6"/>
+<rect x="30" y="205" width="60" height="50" rx="6" fill="#F59E0B" fill-opacity="0.85"/>
+<rect x="30" y="280" width="60" height="50" rx="6" fill="#EC4899" fill-opacity="0.85"/>
+<rect x="30" y="355" width="60" height="50" rx="6" fill="#10B981" fill-opacity="0.85"/>
+<rect x="112" y="190" width="80" height="240" rx="8" fill="#5B4A9B" fill-opacity="0.6"/>
+<rect x="122" y="205" width="60" height="50" rx="6" fill="#EC4899" fill-opacity="0.85"/>
+<rect x="122" y="280" width="60" height="50" rx="6" fill="#10B981" fill-opacity="0.85"/>
+<rect x="122" y="355" width="60" height="50" rx="6" fill="#60A5FA" fill-opacity="0.85"/>
+<rect x="204" y="190" width="80" height="240" rx="8" fill="#5B4A9B" fill-opacity="0.6"/>
+<rect x="214" y="205" width="60" height="50" rx="6" fill="#10B981" fill-opacity="0.85"/>
+<rect x="214" y="280" width="60" height="50" rx="6" fill="#60A5FA" fill-opacity="0.85"/>
+<rect x="214" y="355" width="60" height="50" rx="6" fill="#F59E0B" fill-opacity="0.85"/>
+<rect x="296" y="190" width="80" height="240" rx="8" fill="#5B4A9B" fill-opacity="0.6"/>
+<rect x="306" y="205" width="60" height="50" rx="6" fill="#60A5FA" fill-opacity="0.85"/>
+<rect x="306" y="280" width="60" height="50" rx="6" fill="#F59E0B" fill-opacity="0.85"/>
+<rect x="306" y="355" width="60" height="50" rx="6" fill="#EC4899" fill-opacity="0.85"/>
+<path d="M0 470 L390 470 L390 560 L0 560 Z" fill="#2A1C55"/>
+<circle cx="60" cy="230" r="14" fill="#FFFFFF" fill-opacity="0.9" stroke="#F59E0B" stroke-width="4"/>
+<circle cx="240" cy="305" r="14" fill="#FFFFFF" fill-opacity="0.9" stroke="#F59E0B" stroke-width="4"/>
+<circle cx="330" cy="380" r="14" fill="#FFFFFF" fill-opacity="0.9" stroke="#F59E0B" stroke-width="4"/>
+<text x="24" y="32" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#FFFFFF" text-anchor="start">9:41</text>
+<text x="366" y="32" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF" text-anchor="end">5G  100%</text>
+<circle cx="36" cy="74" r="18" fill="#000" fill-opacity="0.35"/>
+<text x="36" y="80" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#FFFFFF" text-anchor="middle">‹</text>
+<text x="195.0" y="72" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">Batik Corner KL</text>
+<text x="195.0" y="90" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#E5E7EB" text-anchor="middle">● LIVE  •  1.2k watching</text>
+<rect x="250" y="110" width="120" height="150" rx="14" fill="#111827" fill-opacity="1" stroke="#FFFFFF" stroke-width="1"/>
+<circle cx="310" cy="165" r="26" fill="#E8C4A6" fill-opacity="1"/>
+<rect x="280" y="195" width="60" height="50" rx="20" fill="#B45309" fill-opacity="1"/>
+<rect x="258" y="118" width="35.2" height="28" rx="14" fill="#EF4444" fill-opacity="1"/>
+<text x="275.6" y="137" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#FFFFFF" text-anchor="middle">LIVE</text>
+<rect x="20" y="330" width="200" height="92" rx="14" fill="#FFFFFF" fill-opacity="1"/>
+<text x="36" y="356" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#111827" text-anchor="start">Batik Sarong - Teal</text>
+<text x="36" y="378" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#1E3A8A" text-anchor="start">RM 129.00</text>
+<rect x="36" y="388" width="120" height="26" rx="13" fill="#F59E0B" fill-opacity="1"/>
+<text x="96.0" y="405.2" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#111827" text-anchor="middle">Try in AR</text>
+<rect x="20" y="450" width="250" height="150" rx="14" fill="#000" fill-opacity="0.45"/>
+<text x="34" y="478" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#F59E0B" text-anchor="start">Aina</text>
+<text x="72" y="478" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="start">Ada saiz L?</text>
+<text x="34" y="512" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#F59E0B" text-anchor="start">Mei Ling</text>
+<text x="100" y="512" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="start">Love this colour!</text>
+<text x="34" y="546" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#F59E0B" text-anchor="start">Raj</text>
+<text x="65" y="546" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="start">Delivery to Sabah?</text>
+<rect x="280" y="450" width="90" height="150" rx="14" fill="#F59E0B" fill-opacity="1"/>
+<text x="325" y="500" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800" fill="#111827" text-anchor="middle">FLASH</text>
+<text x="325" y="530" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#111827" text-anchor="middle">04:59</text>
+<text x="325" y="556" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#111827" text-anchor="middle">-30%</text>
+<rect x="20" y="620" width="350" height="44" rx="12" fill="#FFFFFF" fill-opacity="0.15"/>
+<text x="36" y="647" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500" fill="#FFFFFF" text-anchor="start">Comfort mode (teleport + snap turn)</text>
+<rect x="318" y="632" width="40" height="22" rx="11" fill="#10B981" fill-opacity="1"/>
+<circle cx="347" cy="643" r="9" fill="#FFFFFF" fill-opacity="1"/>
+<rect x="20" y="684" width="165" height="52" rx="14" fill="#FFFFFF" fill-opacity="1"/>
+<text x="102.5" y="715.6" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#1E3A8A" text-anchor="middle">Enter VR</text>
+<rect x="195" y="684" width="175" height="52" rx="14" fill="#F59E0B" fill-opacity="1"/>
+<text x="282.5" y="715.6" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#111827" text-anchor="middle">Buy Now</text>
+<rect x="20" y="752" width="350" height="44" rx="22" fill="#FFFFFF" fill-opacity="0.15"/>
+<text x="40" y="779" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="400" fill="#D1D5DB" text-anchor="start">Say something…</text></g></svg><a class="hs" style="left:14px;top:52px;width:44px;height:44px" data-go="0" aria-label="Go to Home"></a><a class="hs" style="left:36px;top:388px;width:120px;height:26px" data-go="1" aria-label="Go to AR Try-On"></a><a class="hs" style="left:195px;top:684px;width:175px;height:52px" data-go="5" aria-label="Go to Co-Shop & Checkout"></a></section><section class="scr" id="s4"><svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844"><defs><linearGradient id="cam14" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9B8A8"/><stop offset="1" stop-color="#8C7B6E"/></linearGradient>
+<linearGradient id="room4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E4DC"/><stop offset="0.62" stop-color="#DCD3C6"/><stop offset="0.62" stop-color="#B89C7E"/><stop offset="1" stop-color="#9C8064"/></linearGradient>
+<linearGradient id="store4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3B2A6B"/><stop offset="1" stop-color="#1B1240"/></linearGradient>
+<linearGradient id="aisle4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E5E7EB"/><stop offset="1" stop-color="#9CA3AF"/></linearGradient>
+<linearGradient id="hero4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1E3A8A"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs><g id="05_Scan_Navigate"><rect x="0" y="0" width="390" height="844" rx="0" fill="url(#aisle4)" fill-opacity="1"/>
+<path d="M0 120 L140 300 L140 600 L0 760 Z" fill="#9CA3AF"/><path d="M390 120 L250 300 L250 600 L390 760 Z" fill="#9CA3AF"/>
+<rect x="10" y="170" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<rect x="270" y="170" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<rect x="10" y="280" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<rect x="270" y="280" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<rect x="10" y="390" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<rect x="270" y="390" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<rect x="10" y="500" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<rect x="270" y="500" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<rect x="10" y="610" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<rect x="270" y="610" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<path d="M195 650 l-32 28 h18 v26 h28 v-26 h18 z" fill="#F59E0B" fill-opacity="0.95"/>
+<path d="M195 570 l-32 28 h18 v26 h28 v-26 h18 z" fill="#F59E0B" fill-opacity="0.7"/>
+<path d="M195 490 l-32 28 h18 v26 h28 v-26 h18 z" fill="#F59E0B" fill-opacity="0.44999999999999996"/>
+<rect x="150" y="330" width="90" height="110" rx="10" fill="#DC2626" fill-opacity="1"/>
+<text x="195" y="390" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">PHILIPS</text>
+<rect x="146" y="326" width="98" height="118" fill="none" stroke="#F59E0B" stroke-width="3" rx="12"/>
+<rect x="30" y="180" width="330" height="128" rx="16" fill="#FFFFFF" fill-opacity="0.97"/>
+<text x="46" y="206" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827" text-anchor="start">Philips Rice Cooker 1.8L</text>
+<text x="46" y="230" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500" fill="#6B7280" text-anchor="start">In-store RM 299  •  Online RM 279</text>
+<rect x="46" y="244" width="119.69999999999999" height="28" rx="14" fill="#ECFDF5" fill-opacity="1"/>
+<text x="105.85" y="263" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#047857" text-anchor="middle">Halal-certified</text>
+<rect x="160" y="244" width="87.8" height="28" rx="14" fill="#FEF3C7" fill-opacity="1"/>
+<text x="203.9" y="263" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#92400E" text-anchor="middle">Rating 4.6</text>
+<rect x="262" y="244" width="94.17999999999999" height="28" rx="14" fill="#EEF2FF" fill-opacity="1"/>
+<text x="309.09" y="263" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#1E3A8A" text-anchor="middle">12 in stock</text>
+<text x="46" y="292" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#1E3A8A" text-anchor="start">Promo: extra 10% with TNG eWallet</text>
+<text x="24" y="32" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#111827" text-anchor="start">9:41</text>
+<text x="366" y="32" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="end">5G  100%</text>
+<rect x="0" y="44" width="390" height="62" rx="0" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="20" y="80" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#111827" text-anchor="start">Mid Valley  ›  Level 2  ›  HomeMart</text>
+<rect x="0" y="594" width="390" height="250" rx="24" fill="#FFFFFF" fill-opacity="1"/>
+<rect x="20" y="612" width="107.52" height="28" rx="14" fill="#EEF2FF" fill-opacity="1"/>
+<text x="73.75999999999999" y="631" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">Scan product</text>
+<rect x="135.51999999999998" y="612" width="86.63999999999999" height="28" rx="14" fill="#1E3A8A" fill-opacity="1"/>
+<text x="178.83999999999997" y="631" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle">Find item</text>
+<rect x="230.15999999999997" y="612" width="93.6" height="28" rx="14" fill="#EEF2FF" fill-opacity="1"/>
+<text x="276.96" y="631" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">Promotions</text>
+<rect x="20" y="652" width="350" height="46" rx="12" fill="#F6F7FB" fill-opacity="1"/>
+<text x="36" y="681" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="start">rice cooker</text>
+<text x="354" y="681" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#1E3A8A" text-anchor="end">Aisle 4 • 35 m</text>
+<rect x="20" y="708" width="350" height="70" rx="12" fill="#EEF2FF" fill-opacity="1"/>
+<circle cx="80" cy="744" r="6" fill="#1E3A8A" fill-opacity="1"/>
+<circle cx="300" cy="734" r="6" fill="#F59E0B" fill-opacity="1"/>
+<path d="M80 744 C150 764 230 714 300 734" stroke="#1E3A8A" stroke-width="3" fill="none" stroke-dasharray="6 4"/>
+<rect x="20" y="788" width="350" height="40" rx="12" fill="#FEF3C7" fill-opacity="1"/>
+<text x="195.0" y="813" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#92400E" text-anchor="middle">Look up – watch your surroundings</text></g></svg><a class="hs" style="left:0px;top:44px;width:390px;height:62px" data-go="0" aria-label="Go to Home"></a></section><section class="scr" id="s5"><svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844"><defs><linearGradient id="cam15" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9B8A8"/><stop offset="1" stop-color="#8C7B6E"/></linearGradient>
+<linearGradient id="room5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E4DC"/><stop offset="0.62" stop-color="#DCD3C6"/><stop offset="0.62" stop-color="#B89C7E"/><stop offset="1" stop-color="#9C8064"/></linearGradient>
+<linearGradient id="store5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3B2A6B"/><stop offset="1" stop-color="#1B1240"/></linearGradient>
+<linearGradient id="aisle5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E5E7EB"/><stop offset="1" stop-color="#9CA3AF"/></linearGradient>
+<linearGradient id="hero5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1E3A8A"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs><g id="06_CoShop_Checkout"><rect x="0" y="0" width="390" height="844" rx="0" fill="#F6F7FB" fill-opacity="1"/>
+<text x="24" y="32" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#111827" text-anchor="start">9:41</text>
+<text x="366" y="32" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="end">5G  100%</text>
+<circle cx="36" cy="74" r="18" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="36" y="80" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#111827" text-anchor="middle">‹</text>
+<text x="195.0" y="72" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#111827" text-anchor="middle">Family Raya Shopping</text>
+<text x="195.0" y="90" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#6B7280" text-anchor="middle">3 members in room</text>
+<rect x="20" y="108" width="350" height="210" rx="20" fill="#E0E7FF" fill-opacity="1"/>
+<g id="Shared_3D_Sofa"><rect x="100" y="190" width="190" height="55" rx="12" fill="#2F5D50"/><rect x="90" y="225" width="210" height="50" rx="14" fill="#3E7A68"/></g>
+<circle cx="120" cy="160" r="8" fill="#EF4444" fill-opacity="1" stroke="#FFFFFF" stroke-width="3"/>
+<rect x="130" y="148" width="29.4" height="28" rx="14" fill="#EF4444" fill-opacity="1"/>
+<text x="144.7" y="167" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#FFFFFF" text-anchor="middle">Mak</text>
+<circle cx="270" cy="170" r="8" fill="#10B981" fill-opacity="1" stroke="#FFFFFF" stroke-width="3"/>
+<rect x="280" y="158" width="35.2" height="28" rx="14" fill="#10B981" fill-opacity="1"/>
+<text x="297.6" y="177" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#FFFFFF" text-anchor="middle">Aina</text>
+<circle cx="200" cy="290" r="8" fill="#F59E0B" fill-opacity="1" stroke="#FFFFFF" stroke-width="3"/>
+<rect x="210" y="278" width="29.4" height="28" rx="14" fill="#F59E0B" fill-opacity="1"/>
+<text x="224.7" y="297" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#FFFFFF" text-anchor="middle">You</text>
+<rect x="20" y="330" width="65.75999999999999" height="28" rx="14" fill="#FFFFFF" fill-opacity="1"/>
+<text x="52.879999999999995" y="349" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">Mic on</text>
+<rect x="93.75999999999999" y="330" width="51.839999999999996" height="28" rx="14" fill="#FFFFFF" fill-opacity="1"/>
+<text x="119.67999999999999" y="349" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">Vote</text>
+<rect x="153.6" y="330" width="100.55999999999999" height="28" rx="14" fill="#FFFFFF" fill-opacity="1"/>
+<text x="203.88" y="349" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">Invite link</text>
+<rect x="20" y="372" width="350" height="150" rx="16" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="36" y="398" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827" text-anchor="start">Shared cart</text>
+<text x="354" y="398" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#1E3A8A" text-anchor="end">Split bill</text>
+<rect x="36" y="406" width="24" height="24" rx="6" fill="#EEF2FF" fill-opacity="1"/>
+<text x="70" y="420" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="start">Sofa Kayu 3-Seater</text>
+<text x="70" y="434" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="400" fill="#6B7280" text-anchor="start">added by You</text>
+<text x="354" y="420" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="end">RM 1,499</text>
+<rect x="36" y="440" width="24" height="24" rx="6" fill="#EEF2FF" fill-opacity="1"/>
+<text x="70" y="454" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="start">Baju Kurung Moden</text>
+<text x="70" y="468" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="400" fill="#6B7280" text-anchor="start">added by Aina</text>
+<text x="354" y="454" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="end">RM 89</text>
+<rect x="36" y="474" width="24" height="24" rx="6" fill="#EEF2FF" fill-opacity="1"/>
+<text x="70" y="488" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="start">Rice Cooker 1.8L</text>
+<text x="70" y="502" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="400" fill="#6B7280" text-anchor="start">added by Mak</text>
+<text x="354" y="488" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="end">RM 279</text>
+<text x="20" y="552" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827" text-anchor="start">Payment method</text>
+<rect x="20" y="566" width="171" height="40" rx="12" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="106" y="591" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">DuitNow QR</text>
+<rect x="199" y="566" width="171" height="40" rx="12" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="285" y="591" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">FPX</text>
+<rect x="20" y="614" width="171" height="40" rx="12" fill="#EEF2FF" fill-opacity="1" stroke="#1E3A8A" stroke-width="1"/>
+<text x="106" y="639" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#1E3A8A" text-anchor="middle">TNG eWallet</text>
+<rect x="199" y="614" width="171" height="40" rx="12" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="285" y="639" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Card</text>
+<rect x="20" y="670" width="350" height="64" rx="14" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="36" y="694" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Subtotal  RM 1,867.00   SST  RM 0.00</text>
+<text x="36" y="716" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Delivery RM 25.00</text>
+<text x="354" y="716" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#111827" text-anchor="end">RM 1,892.00</text>
+<rect x="20" y="750" width="350" height="56" rx="14" fill="#1E3A8A" fill-opacity="1"/>
+<text x="195.0" y="783.6" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">Pay with Face ID  •  RM 1,892.00</text></g></svg><a class="hs" style="left:14px;top:52px;width:44px;height:44px" data-go="0" aria-label="Go to Home"></a><a class="hs" style="left:20px;top:750px;width:350px;height:56px" data-go="6" aria-label="Go to Order Confirmed"></a></section><section class="scr" id="s6"><div class="conf">
+<div class="sb"><span>9:41</span><span>5G 100%</span></div>
+<div class="tick"><svg viewBox="0 0 52 52" width="64" height="64"><path d="M14 27l8 8 16-17" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+<h1>Payment successful!</h1><p class="m">Order #SVX-102938</p>
+<div class="card"><div class="row"><b>Arrives 20–22 Nov 2026</b><span class="m">J&amp;T Express</span></div>
+<div class="row"><span>Sofa Kayu 3-Seater</span><span>RM 1,499</span></div><div class="row"><span>Baju Kurung Moden</span><span>RM 89</span></div><div class="row"><span>Rice Cooker 1.8L</span><span>RM 279</span></div>
+<div class="row tot"><span>Paid with TNG eWallet</span><b>RM 1,892.00</b></div></div>
+<button class="sec" data-go="5">Share with family (WhatsApp)</button><button class="pri" data-go="0">Back to Home</button></div></section></div></div>
+<script>
+const L=['Home', 'AR Try-On', 'View in My Space', 'Virtual Store & Live', 'Scan & Navigate', 'Co-Shop & Checkout', 'Order Confirmed'];const nav=document.getElementById('nav');
+L.forEach((l,i)=>{const b=document.createElement('button');b.textContent=(i+1)+'. '+l;b.onclick=()=>go(i);nav.appendChild(b)});
+function go(i){document.querySelectorAll('.scr').forEach((s,j)=>s.classList.toggle('on',j==i));[...nav.children].forEach((b,j)=>b.classList.toggle('on',j==i))}
+document.addEventListener('click',e=>{const t=e.target.closest('[data-go]');if(t){go(+t.dataset.go);return}
+if(e.target.closest('.vp')){const v=document.getElementById('vp');v.classList.add('flash');setTimeout(()=>v.classList.remove('flash'),500)}});
+go(0);
+</script></body></html>

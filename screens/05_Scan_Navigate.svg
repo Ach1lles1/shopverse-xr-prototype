@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844"><defs><linearGradient id="cam1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9B8A8"/><stop offset="1" stop-color="#8C7B6E"/></linearGradient>
+<linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E4DC"/><stop offset="0.62" stop-color="#DCD3C6"/><stop offset="0.62" stop-color="#B89C7E"/><stop offset="1" stop-color="#9C8064"/></linearGradient>
+<linearGradient id="store" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3B2A6B"/><stop offset="1" stop-color="#1B1240"/></linearGradient>
+<linearGradient id="aisle" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E5E7EB"/><stop offset="1" stop-color="#9CA3AF"/></linearGradient>
+<linearGradient id="hero" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1E3A8A"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs><g id="05_Scan_Navigate"><rect x="0" y="0" width="390" height="844" rx="0" fill="url(#aisle)" fill-opacity="1"/>
+<path d="M0 120 L140 300 L140 600 L0 760 Z" fill="#9CA3AF"/><path d="M390 120 L250 300 L250 600 L390 760 Z" fill="#9CA3AF"/>
+<rect x="10" y="170" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<rect x="270" y="170" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<rect x="10" y="280" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<rect x="270" y="280" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<rect x="10" y="390" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<rect x="270" y="390" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<rect x="10" y="500" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<rect x="270" y="500" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<rect x="10" y="610" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<rect x="270" y="610" width="110" height="14" rx="0" fill="#6B7280" fill-opacity="1"/>
+<path d="M195 650 l-32 28 h18 v26 h28 v-26 h18 z" fill="#F59E0B" fill-opacity="0.95"/>
+<path d="M195 570 l-32 28 h18 v26 h28 v-26 h18 z" fill="#F59E0B" fill-opacity="0.7"/>
+<path d="M195 490 l-32 28 h18 v26 h28 v-26 h18 z" fill="#F59E0B" fill-opacity="0.44999999999999996"/>
+<rect x="150" y="330" width="90" height="110" rx="10" fill="#DC2626" fill-opacity="1"/>
+<text x="195" y="390" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#FFFFFF" text-anchor="middle">PHILIPS</text>
+<rect x="146" y="326" width="98" height="118" fill="none" stroke="#F59E0B" stroke-width="3" rx="12"/>
+<rect x="30" y="180" width="330" height="128" rx="16" fill="#FFFFFF" fill-opacity="0.97"/>
+<text x="46" y="206" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827" text-anchor="start">Philips Rice Cooker 1.8L</text>
+<text x="46" y="230" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="500" fill="#6B7280" text-anchor="start">In-store RM 299  •  Online RM 279</text>
+<rect x="46" y="244" width="119.69999999999999" height="28" rx="14" fill="#ECFDF5" fill-opacity="1"/>
+<text x="105.85" y="263" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#047857" text-anchor="middle">Halal-certified</text>
+<rect x="160" y="244" width="87.8" height="28" rx="14" fill="#FEF3C7" fill-opacity="1"/>
+<text x="203.9" y="263" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#92400E" text-anchor="middle">Rating 4.6</text>
+<rect x="262" y="244" width="94.17999999999999" height="28" rx="14" fill="#EEF2FF" fill-opacity="1"/>
+<text x="309.09" y="263" font-family="Inter, Arial, sans-serif" font-size="11" font-weight="500" fill="#1E3A8A" text-anchor="middle">12 in stock</text>
+<text x="46" y="292" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#1E3A8A" text-anchor="start">Promo: extra 10% with TNG eWallet</text>
+<text x="24" y="32" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#111827" text-anchor="start">9:41</text>
+<text x="366" y="32" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="end">5G  100%</text>
+<rect x="0" y="44" width="390" height="62" rx="0" fill="#FFFFFF" fill-opacity="0.9"/>
+<text x="20" y="80" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="600" fill="#111827" text-anchor="start">Mid Valley  ›  Level 2  ›  HomeMart</text>
+<rect x="0" y="594" width="390" height="250" rx="24" fill="#FFFFFF" fill-opacity="1"/>
+<rect x="20" y="612" width="107.52" height="28" rx="14" fill="#EEF2FF" fill-opacity="1"/>
+<text x="73.75999999999999" y="631" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">Scan product</text>
+<rect x="135.51999999999998" y="612" width="86.63999999999999" height="28" rx="14" fill="#1E3A8A" fill-opacity="1"/>
+<text x="178.83999999999997" y="631" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#FFFFFF" text-anchor="middle">Find item</text>
+<rect x="230.15999999999997" y="612" width="93.6" height="28" rx="14" fill="#EEF2FF" fill-opacity="1"/>
+<text x="276.96" y="631" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">Promotions</text>
+<rect x="20" y="652" width="350" height="46" rx="12" fill="#F6F7FB" fill-opacity="1"/>
+<text x="36" y="681" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500" fill="#111827" text-anchor="start">rice cooker</text>
+<text x="354" y="681" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#1E3A8A" text-anchor="end">Aisle 4 • 35 m</text>
+<rect x="20" y="708" width="350" height="70" rx="12" fill="#EEF2FF" fill-opacity="1"/>
+<circle cx="80" cy="744" r="6" fill="#1E3A8A" fill-opacity="1"/>
+<circle cx="300" cy="734" r="6" fill="#F59E0B" fill-opacity="1"/>
+<path d="M80 744 C150 764 230 714 300 734" stroke="#1E3A8A" stroke-width="3" fill="none" stroke-dasharray="6 4"/>
+<rect x="20" y="788" width="350" height="40" rx="12" fill="#FEF3C7" fill-opacity="1"/>
+<text x="195.0" y="813" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#92400E" text-anchor="middle">Look up – watch your surroundings</text></g></svg>
