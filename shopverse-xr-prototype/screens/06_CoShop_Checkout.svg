@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="390" height="844" viewBox="0 0 390 844"><defs><linearGradient id="cam1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C9B8A8"/><stop offset="1" stop-color="#8C7B6E"/></linearGradient>
+<linearGradient id="room" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E4DC"/><stop offset="0.62" stop-color="#DCD3C6"/><stop offset="0.62" stop-color="#B89C7E"/><stop offset="1" stop-color="#9C8064"/></linearGradient>
+<linearGradient id="store" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3B2A6B"/><stop offset="1" stop-color="#1B1240"/></linearGradient>
+<linearGradient id="aisle" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E5E7EB"/><stop offset="1" stop-color="#9CA3AF"/></linearGradient>
+<linearGradient id="hero" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1E3A8A"/><stop offset="1" stop-color="#7C3AED"/></linearGradient></defs><g id="06_CoShop_Checkout"><rect x="0" y="0" width="390" height="844" rx="0" fill="#F6F7FB" fill-opacity="1"/>
+<text x="24" y="32" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="600" fill="#111827" text-anchor="start">9:41</text>
+<text x="366" y="32" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="end">5G  100%</text>
+<circle cx="36" cy="74" r="18" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="36" y="80" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="600" fill="#111827" text-anchor="middle">‹</text>
+<text x="195.0" y="72" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="700" fill="#111827" text-anchor="middle">Family Raya Shopping</text>
+<text x="195.0" y="90" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#6B7280" text-anchor="middle">3 members in room</text>
+<rect x="20" y="108" width="350" height="210" rx="20" fill="#E0E7FF" fill-opacity="1"/>
+<g id="Shared_3D_Sofa"><rect x="100" y="190" width="190" height="55" rx="12" fill="#2F5D50"/><rect x="90" y="225" width="210" height="50" rx="14" fill="#3E7A68"/></g>
+<circle cx="120" cy="160" r="8" fill="#EF4444" fill-opacity="1" stroke="#FFFFFF" stroke-width="3"/>
+<rect x="130" y="148" width="29.4" height="28" rx="14" fill="#EF4444" fill-opacity="1"/>
+<text x="144.7" y="167" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#FFFFFF" text-anchor="middle">Mak</text>
+<circle cx="270" cy="170" r="8" fill="#10B981" fill-opacity="1" stroke="#FFFFFF" stroke-width="3"/>
+<rect x="280" y="158" width="35.2" height="28" rx="14" fill="#10B981" fill-opacity="1"/>
+<text x="297.6" y="177" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#FFFFFF" text-anchor="middle">Aina</text>
+<circle cx="200" cy="290" r="8" fill="#F59E0B" fill-opacity="1" stroke="#FFFFFF" stroke-width="3"/>
+<rect x="210" y="278" width="29.4" height="28" rx="14" fill="#F59E0B" fill-opacity="1"/>
+<text x="224.7" y="297" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="500" fill="#FFFFFF" text-anchor="middle">You</text>
+<rect x="20" y="330" width="65.75999999999999" height="28" rx="14" fill="#FFFFFF" fill-opacity="1"/>
+<text x="52.879999999999995" y="349" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">Mic on</text>
+<rect x="93.75999999999999" y="330" width="51.839999999999996" height="28" rx="14" fill="#FFFFFF" fill-opacity="1"/>
+<text x="119.67999999999999" y="349" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">Vote</text>
+<rect x="153.6" y="330" width="100.55999999999999" height="28" rx="14" fill="#FFFFFF" fill-opacity="1"/>
+<text x="203.88" y="349" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="500" fill="#1E3A8A" text-anchor="middle">Invite link</text>
+<rect x="20" y="372" width="350" height="150" rx="16" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="36" y="398" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827" text-anchor="start">Shared cart</text>
+<text x="354" y="398" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="600" fill="#1E3A8A" text-anchor="end">Split bill</text>
+<rect x="36" y="406" width="24" height="24" rx="6" fill="#EEF2FF" fill-opacity="1"/>
+<text x="70" y="420" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="start">Sofa Kayu 3-Seater</text>
+<text x="70" y="434" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="400" fill="#6B7280" text-anchor="start">added by You</text>
+<text x="354" y="420" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="end">RM 1,499</text>
+<rect x="36" y="440" width="24" height="24" rx="6" fill="#EEF2FF" fill-opacity="1"/>
+<text x="70" y="454" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="start">Baju Kurung Moden</text>
+<text x="70" y="468" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="400" fill="#6B7280" text-anchor="start">added by Aina</text>
+<text x="354" y="454" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="end">RM 89</text>
+<rect x="36" y="474" width="24" height="24" rx="6" fill="#EEF2FF" fill-opacity="1"/>
+<text x="70" y="488" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="start">Rice Cooker 1.8L</text>
+<text x="70" y="502" font-family="Inter, Arial, sans-serif" font-size="10" font-weight="400" fill="#6B7280" text-anchor="start">added by Mak</text>
+<text x="354" y="488" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="end">RM 279</text>
+<text x="20" y="552" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="700" fill="#111827" text-anchor="start">Payment method</text>
+<rect x="20" y="566" width="171" height="40" rx="12" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="106" y="591" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">DuitNow QR</text>
+<rect x="199" y="566" width="171" height="40" rx="12" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="285" y="591" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">FPX</text>
+<rect x="20" y="614" width="171" height="40" rx="12" fill="#EEF2FF" fill-opacity="1" stroke="#1E3A8A" stroke-width="1"/>
+<text x="106" y="639" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#1E3A8A" text-anchor="middle">TNG eWallet</text>
+<rect x="199" y="614" width="171" height="40" rx="12" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="285" y="639" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Card</text>
+<rect x="20" y="670" width="350" height="64" rx="14" fill="#FFFFFF" fill-opacity="1" stroke="#E5E7EB" stroke-width="1"/>
+<text x="36" y="694" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Subtotal  RM 1,867.00   SST  RM 0.00</text>
+<text x="36" y="716" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="400" fill="#6B7280" text-anchor="start">Delivery RM 25.00</text>
+<text x="354" y="716" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#111827" text-anchor="end">RM 1,892.00</text>
+<rect x="20" y="750" width="350" height="56" rx="14" fill="#1E3A8A" fill-opacity="1"/>
+<text x="195.0" y="783.6" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF" text-anchor="middle">Pay with Face ID  •  RM 1,892.00</text></g></svg>
